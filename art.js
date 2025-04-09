@@ -339,7 +339,6 @@ if (pride) {
       const totalProp = flagData.reduce((acc, [, prop]) => acc + prop, 0);
       linesArray.forEach((line) => {
         const lineLength = line.length; // Now every line is of length maxLength
-        const lineLength = line.length;
         let widths = flagData.map(([, prop]) =>
           Math.floor((prop / totalProp) * lineLength)
         );
