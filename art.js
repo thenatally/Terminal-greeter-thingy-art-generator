@@ -225,6 +225,7 @@ if (pride) {
 
 let stylePrefix = "";
 // If not in pride mode, set style based on custom or fg/bg/fmt info.
+
 if (!pride) {
   if (custom) {
     stylePrefix = `\\033[${custom}m`;
@@ -338,6 +339,7 @@ if (pride) {
       const totalProp = flagData.reduce((acc, [, prop]) => acc + prop, 0);
       linesArray.forEach((line) => {
         const lineLength = line.length; // Now every line is of length maxLength
+        const lineLength = line.length;
         let widths = flagData.map(([, prop]) =>
           Math.floor((prop / totalProp) * lineLength)
         );
@@ -356,6 +358,7 @@ if (pride) {
           pos += widths[band];
 
           let codes = [];
+          if (fmt) codes.push(fmt);
           if (prideMode === "bg") {
             if (fg) codes.push(fg);
             codes.push(hexToAnsi(flagData[band][0], true));
