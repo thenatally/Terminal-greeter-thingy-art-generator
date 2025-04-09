@@ -8,3 +8,7 @@ art.js \<input-file.txt\> [--fg \<color\>] [--bg \<color\>] [--fmt \<style\>] [-
 example output:
 
 ![image](https://github.com/user-attachments/assets/31734aca-bfd2-4d4c-87bb-3489dfbfb77f)
+
+generated with:
+
+`art.js .hitally.txt --multi --fmt bold --pride fg lesbian --pride-orient vert --bg "rgb(15,15,15)" --end fade`
