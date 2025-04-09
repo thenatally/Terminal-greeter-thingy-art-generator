@@ -14,3 +14,4 @@ generated with:
 
 `art.js .hitally.txt --multi --fmt bold --pride fg lesbian --pride-orient vert --bg "rgb(15,15,15)" --end fade`
 
+for --multi every segment needs to be seperated by 3 or more empty lines, i pulled this number from nowhere just deal with
